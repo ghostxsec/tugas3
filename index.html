@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Pertemuan III</title>
+</head>
+<style>
+body {
+  background-image: url("https://cdn.dribbble.com/users/2660249/screenshots/6664064/comp_1.gif");
+  background-size: cover;
+}
+h1 {
+	margin: 100px auto;
+	text-align: center;
+	color: white;
+	font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
+}
+
+p {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
+  text-align: center;
+  margin-top: 150px;
+  color: #fff;
+  font-size: 20px;
+}
+
+a {
+	text-decoration:none;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 40px auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    flex-direction: column;
+  }
+}
+</style>
+<body>
+<br>
+<h1>Tugas Pemrograman Web</h1>
+<div class="cards-list">
+  
+<div class="card 1">
+  <div class="card_image"> <img src="https://i.pinimg.com/originals/69/f3/0a/69f30a9203334871de8306ff6c477c59.gif" /> </div>
+  <div class="card_title title-white">
+    <a href="pages/1.html"><p>Objek Text</p></a>
+  </div>
+</div>
+
+  <div class="card 2">
+  <div class="card_image">
+    <img src="https://cdn.dribbble.com/users/720738/screenshots/3008140/animation.gif" />
+    </div>
+  <div class="card_title title-white">
+    <a href="pages/2.html"><p>Objek Radio</p></a>
+  </div>
+</div>
+
+<div class="card 3">
+  <div class="card_image">
+    <img src="https://cdn.dribbble.com/users/689802/screenshots/2601116/square.gif" />
+  </div>
+  <div class="card_title">
+    <a href="pages/3.html"><p>Objek Checkbox</p></a>
+  </div>
+</div>
+  
+  <div class="card 4">
+  <div class="card_image">
+    <img src="https://cdn.dribbble.com/users/1184304/screenshots/3615111/13_another-ball.gif" />
+    </div>
+  <div class="card_title title-black">
+    <a href="pages/4.html"><p>Objek TextArea</p></a>
+  </div>
+  </div>
+  
+    <div class="card 5">
+  <div class="card_image">
+    <img src="https://cdn.dribbble.com/users/1369921/screenshots/4279972/mr.-lollipop.gif"/>
+    </div>
+  <div class="card_title title-black">
+    <a href="pages/5.html"><p>Objek Select</p></a>
+  </div>
+  </div>
+
+</div>
+</body>
+</html>
