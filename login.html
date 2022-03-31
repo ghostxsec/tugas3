@@ -1,0 +1,40 @@
+<html>
+<head>
+<title></title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<form id="form_login" method="POST">
+<div class="form">
+    <div class="title">Admin Panel</div>
+      <div class="subtitle">Silahkan Login</div>
+		  <div class="input-container ic1">
+			<input id="username" class="input" type="text" placeholder=" " />
+			<div class="cut"></div>
+			<label for="username" class="placeholder">Username</label>
+		  </div>
+		  <div class="input-container ic2">
+			<input id="password" class="input" type="password" placeholder=" " />
+			<div class="cut"></div>
+			<label for="password" class="placeholder">Password</label>
+		  </div>
+      <button type="submit" class="submit" onclick="login(event)">Login</button>
+    </div>
+</form>		
+<script>
+    function login(event) {
+          event.preventDefault();
+
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          if (username === "admin" && password === "user") {
+               window.location.replace("challenge/admin.html");
+          } else {
+              alert("Invalid information");
+              return;
+          }
+    }
+ </script> 
+</body>
+</html>
